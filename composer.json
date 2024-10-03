@@ -1,0 +1,29 @@
+{
+    "name": "hpadev/omnipay-windcave",
+    "type": "library",
+    "description": "Windcave REST API driver for the Omnipay payment processing library",
+    "keywords": [
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment",
+        "windcave",
+        "payment express"
+    ],
+    "homepage": "https://github.com/hpadev/omnipay-windcave",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Omnipay\\Windcave\\": "src/"
+        }
+    },
+    "require": {
+        "omnipay/common": "^2"
+    },
+    "require-dev": {
+        "omnipay/tests": "^2",
+        "phpunit/phpunit": "^5.7|^6"
+    },
+    "prefer-stable": true
+}
