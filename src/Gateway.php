@@ -63,6 +63,7 @@ class Gateway extends AbstractGateway
                 'declined' => '',
                 'cancelled' => '',
             ],
+            'notificationUrl' => '',
         );
     }
 
@@ -106,18 +107,18 @@ class Gateway extends AbstractGateway
      * Get Notification URL
      * @return array
      */
-    public function getNotificationURL()
+    public function getNotificationUrl()
     {
-        return $this->getParameter('notificationURL');
+        return $this->getParameter('notificationUrl');
     }
 
     /**
      * Set Notification URL
      * @param array $value
      */
-    public function setNotificationURL($value)
+    public function setNotificationUrl($value)
     {
-        return $this->setParameter('notificationURL', $value);
+        return $this->setParameter('notificationUrl', $value);
     }
 
     /**

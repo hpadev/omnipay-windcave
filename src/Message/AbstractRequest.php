@@ -66,6 +66,16 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
         return $this->setParameter('callbackUrls', $value);
     }
 
+    public function getNotificationUrl()
+    {
+        return $this->getParameter('notificationUrl');
+    }
+
+    public function setNotificationUrl($value)
+    {
+        return $this->setParameter('notificationUrl', $value);
+    }
+
     /**
      * Get Merchant
      * @return string Merchant ID

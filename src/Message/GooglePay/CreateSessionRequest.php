@@ -25,6 +25,7 @@ class CreateSessionRequest extends AbstractRequest implements RequestInterface
             'currency' => $this->getCurrency(),
             'merchantReference' => substr($this->getMerchantReference(), 0, 64),
             'callbackUrls' => $this->getCallbackUrls(),
+            'notificationUrl' => $this->getNotificationUrl(),
         ];
 
         $params = $this->getParameters();
