@@ -1,6 +1,6 @@
 <?php
 
-namespace Omnipay\Windcave\Message\GooglePay;
+namespace Omnipay\Windcave\Message\ApplePay;
 
 use Omnipay\Windcave\Message\GooglePay\RefundResponse as GooglePayRefundResponse;
 
