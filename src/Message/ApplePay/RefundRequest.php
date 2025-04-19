@@ -10,6 +10,6 @@ class RefundRequest extends GooglePayRefundRequest
 
     public function getResponseClass()
     {
-        return RefundRequest::class;
+        return RefundResponse::class;
     }
 }
