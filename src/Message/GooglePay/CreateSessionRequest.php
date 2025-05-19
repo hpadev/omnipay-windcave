@@ -31,9 +31,9 @@ class CreateSessionRequest extends AbstractRequest implements RequestInterface
         $params = $this->getParameters();
         if (isset($params['storeCard']) && ($params['storeCard'] === true)) {
             $data['storeCard'] = $params['storeCard'];
-            $data['storedCardIndicator'] = $params['storedCardIndicator'];
-            $data['recurringExpiry'] = $params['recurringExpiry'];
-            $data['recurringFrequency'] = $params['recurringFrequency'];
+            if (isset($params['storedCardIndicator'])) $data['storedCardIndicator'] = $params['storedCardIndicator'];
+            if (isset($params['recurringExpiry'])) $data['recurringExpiry'] = $params['recurringExpiry'];
+            if (isset($params['recurringFrequency'])) $data['recurringFrequency'] = $params['recurringFrequency'];
         }
 
         // Has the Money class been used to set the amount?
